@@ -1,0 +1,12 @@
+Digital Prototype:
+
+using the ps4 controller
+http://gamedev.stackexchange.com/questions/87106/accessing-dualshock-4-motion-sensor-in-windows-ideally-unity/87178#87178
+https://www.youtube.com/watch?v=XkRWyxMhNak
+
+spit screen
+https://www.youtube.com/watch?v=n_ybHG0Pggw
+https://www.youtube.com/watch?v=_HCYb7Fj90w
+
+Use ps4 controller motion sensor for the walker
+then use unity to build the game
