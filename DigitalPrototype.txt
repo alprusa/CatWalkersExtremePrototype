@@ -8,5 +8,8 @@ spit screen
 https://www.youtube.com/watch?v=n_ybHG0Pggw
 https://www.youtube.com/watch?v=_HCYb7Fj90w
 
+doin different stuff
+https://unity3d.com/learn/tutorials/projects/space-shooter/boundary?playlist=17147
+
 Use ps4 controller motion sensor for the walker
 then use unity to build the game
