@@ -49,6 +49,8 @@
      <Compile Include="Assets\Scripts\Cat1Controller.cs" />
      <Compile Include="Assets\Scripts\DestroyBoundary.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\PS4_Controller.cs" />
+     <Compile Include="Assets\Scripts\PowerAttacks.cs" />
      <Compile Include="Assets\Scripts\SplitScreen.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

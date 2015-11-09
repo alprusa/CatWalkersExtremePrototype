@@ -13,3 +13,6 @@ https://unity3d.com/learn/tutorials/projects/space-shooter/boundary?playlist=171
 
 Use ps4 controller motion sensor for the walker
 then use unity to build the game
+
+Backup plan if ps4 controller don't work make the game on my phone and tablet then just have the players start
+	at the same time (this will also demonstrate the online action)
