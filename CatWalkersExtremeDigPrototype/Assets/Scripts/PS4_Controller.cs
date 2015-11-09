@@ -10,7 +10,7 @@ public class PS4_Controller : MonoBehaviour {
 		SpecialAttack();
 		PowerAttack();
 		Cancel ();
-		motionSensor ();
+		//motionSensor ();
 	}
 
 	void SpecialAttack(){
@@ -30,7 +30,7 @@ public class PS4_Controller : MonoBehaviour {
 		if(Input.GetButton("PS4_X")) print("PS4_X");
 	}
 
-	void motionSensor(){
+	/*void motionSensor(){
 		Vector3 acceleration = new Vector3 (
 			System.BitConverter.ToInt16 (_inputBuffer, 19),
 			System.BitConverter.ToInt16 (_inputBuffer, 21),
@@ -44,5 +44,5 @@ public class PS4_Controller : MonoBehaviour {
 		) / 1024f;
 
 		print (acceleration);
-	}
+	}*/
 }

@@ -9,27 +9,46 @@ public class Cat1Controller : MonoBehaviour {
 	
 	public float speed;
 	public float turnSpeed;
-	public float turnAmount;
+
+	private float preVertical;
+	private float shakeAmount;
+	private float turnAmount;
+
+	private bool stoppedMoving = false;
 	
 	void Start(){
 		rigidBody = GetComponent<Rigidbody>();
 	}
 
 	void FixedUpdate(){
-		float horizontalMovement =  Input.GetAxis("Horizontal");
-		float verticalMovement =  Input.GetAxis("Vertical");
+		float horizontalMovement =  Input.acceleration.x;
+		float verticalMovement =  Input.acceleration.y;
 
-		MovementManagement(horizontalMovement, verticalMovement);
+		//check if play has stopped shaking
+		if (preVertical == verticalMovement)
+			stoppedMoving = true;
+		else
+			stoppedMoving = false;
+
+		//make move forward
+		if (verticalMovement != 0 && !stoppedMoving)
+			Movement(horizontalMovement, verticalMovement);
+
+		//make rotation
+		if (horizontalMovement != 0)
+			Rotating (horizontalMovement, verticalMovement);
 	}
 
-	void MovementManagement (float horizontal, float vertical)
+	void Movement (float horizontal, float vertical)
 	{
 		//move the cat forward and such
-		if (vertical > 0)
-			transform.Translate ((Vector3.forward) * speed * Time.deltaTime);
+		if (vertical < 0)
+			vertical = -vertical;
 
-		if (horizontal != 0)
-			Rotating (horizontal, vertical);
+		if(shakeAmount < 0.5)
+			shakeAmount += (vertical * speed);
+
+		transform.Translate ((Vector3.forward) * turnAmount * Time.deltaTime);
 
 		//prevent cat from leaving the game area
 		rigidBody.position = new Vector3 (
@@ -38,12 +57,14 @@ public class Cat1Controller : MonoBehaviour {
 			Mathf.Clamp(rigidBody.position.z, boundary.zMin, boundary.zMax)
 		);
 
+		preVertical = vertical;
+		print (Input.acceleration);
 	}
 
 	void Rotating (float horizontal, float vertical)
 	{
 		//allow rotational movement
-		if(horizontal < 0.8 || horizontal > -0.8)turnAmount += horizontal * turnSpeed;
+		if(horizontal < 0.2 || horizontal > -0.2) turnAmount += (horizontal * turnSpeed);
 
 		Vector3 rot = new Vector3 (0.0f, turnAmount, 0.0f);
 		rigidBody.rotation = Quaternion.Euler (rot);
