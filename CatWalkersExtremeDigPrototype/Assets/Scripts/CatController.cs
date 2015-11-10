@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Cat1Controller : MonoBehaviour {
+public class CatController : MonoBehaviour {
 	
 	public Rigidbody rigidBody;
 
@@ -17,8 +17,7 @@ public class Cat1Controller : MonoBehaviour {
 	
 	private float preVertical;
 	private float turnAmount;
-	
-	private int finishTimer = 0;
+
 	private int shakeTimer = 0;
 
 	void FixedUpdate(){
@@ -30,14 +29,7 @@ public class Cat1Controller : MonoBehaviour {
 		Movement(horizontalMovement, verticalMovement);
 
 		//make rotation
-		if(verticalMovement > minTilt && verticalMovement < maxTilt)
-			Rotating (horizontalMovement);
-
-		//to end the race once you've crossed the finish line for a period of time
-		if (finishTimer > 1)
-			finishTimer++;
-		if (finishTimer > 50)
-			Quit ();
+		Rotating (horizontalMovement);
 
 		//only start the shakeTimer once they returned to start of rotaional cycle
 		if(verticalMovement > minTilt) shakeTimer++;
@@ -88,17 +80,18 @@ public class Cat1Controller : MonoBehaviour {
 		rigidBody.rotation = Quaternion.Euler (rot);
 	}
 
-	//return the main menu
-	void Quit(){
-		Application.LoadLevel (Application.loadedLevelName); //just restart this for now
-	}
-
 	//trigger invisible sphere that sets the "finished" bool
 	void OnTriggerEnter(Collider other) 
 	{
 		if (other.GetComponent<Collider>().tag == "Finish") {
 			ui.finished = true;
-			finishTimer++;
 		}
+	}
+
+	//trigger destroy short-cut box
+	void OnTriggerStay(Collider other) 
+	{
+		if (other.GetComponent<Collider> ().tag == "ShortCut")
+			Destroy (other.gameObject);
 	}
 }

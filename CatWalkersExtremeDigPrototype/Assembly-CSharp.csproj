@@ -46,7 +46,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Boundary.cs" />
-     <Compile Include="Assets\Scripts\Cat1Controller.cs" />
+     <Compile Include="Assets\Scripts\CatController.cs" />
      <Compile Include="Assets\Scripts\DestroyBoundary.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\PS4_Controller.cs" />

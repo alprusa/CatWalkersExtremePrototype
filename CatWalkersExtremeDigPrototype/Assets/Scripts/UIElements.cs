@@ -13,10 +13,13 @@ public class UIElements : MonoBehaviour {
 
 	public bool finished = false;
 
+	public RectTransform energyBar;
 	public RectTransform finishBanner;
 	public Text finishText;
 
 	private RectTransform panel;
+
+	private int finishTimer = 0;
 	
 	// Update is called once per frame
 	void Update () {
@@ -24,6 +27,8 @@ public class UIElements : MonoBehaviour {
 			timer.GetComponent<Text> ().text = ((int)Time.timeSinceLevelLoad).ToString ();
 		else
 			Finished ();
+
+		depleteEnergy ();
 	}
 
 	//maybe best to change this one to short-cuts instead
@@ -39,10 +44,25 @@ public class UIElements : MonoBehaviour {
 			sp.shortCut = true;
 	}
 
+	public void depleteEnergy(){
+		energyBar.localScale = new Vector3 (sp.energy, 0,0);
+	}
+
 	//display finish banner
 	void Finished () {
 		finishBanner.GetComponent<Image>().color = new Color(0, 12, 255, 180);
 		finishText.GetComponent<Text>().color = new Color(255.0f, 0.0f, 0.0f, 255.0f);
+
+		//to end the race once you've crossed the finish line for a period of time
+		finishTimer++;
+
+		if (finishTimer > 50)
+			Quit ();
+	}
+
+	//return the main menu
+	void Quit(){
+		Application.LoadLevel ("Menu"); //just restart this for now
 	}
 
 	//restarts the game

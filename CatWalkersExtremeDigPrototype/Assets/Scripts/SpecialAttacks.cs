@@ -8,6 +8,7 @@ public class SpecialAttacks : MonoBehaviour {
 	public bool spUsed = false;
 
 	public float newSpeed;
+	public float energy;
 
 	private int specialAttacksTimer = 0;
 	private int waitTimer = 0;
@@ -39,15 +40,8 @@ public class SpecialAttacks : MonoBehaviour {
 			spUsed = false;
 			waitTimer = 0;
 		}
-	}
-	
-	//trigger invisible sphere that sets the "finished" bool
-	void OnTriggerStay(Collider other) 
-	{
-		print (other.GetComponent<Collider>().tag);
-		if (other.GetComponent<Collider>().tag == "Player" && shortCut) {
-			Destroy(gameObject);
-		}
+
+		energy = 0.0f;
 	}
 
 	/*void ghosting(){
