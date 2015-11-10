@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour {
 		Application.LoadLevel("mainGame");
 	}
 
-	public void QuitGame(){
-		Application.Quit ();
+	public void Instructions(){
+		//disable menu ui and create instructions interface
 	}
 }
