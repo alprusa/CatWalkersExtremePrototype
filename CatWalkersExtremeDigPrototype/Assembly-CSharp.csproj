@@ -47,10 +47,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Boundary.cs" />
      <Compile Include="Assets\Scripts\CatController.cs" />
+     <Compile Include="Assets\Scripts\DemoInst.cs" />
      <Compile Include="Assets\Scripts\DestroyBoundary.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\PS4_Controller.cs" />
      <Compile Include="Assets\Scripts\PowerAttacks.cs" />
+     <Compile Include="Assets\Scripts\ShortCuts.cs" />
      <Compile Include="Assets\Scripts\SpecialAttacks.cs" />
      <Compile Include="Assets\Scripts\UIElements.cs" />
  <Reference Include="UnityEngine.UI">

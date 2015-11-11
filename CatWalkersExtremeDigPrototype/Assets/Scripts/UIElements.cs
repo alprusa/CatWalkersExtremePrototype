@@ -45,7 +45,7 @@ public class UIElements : MonoBehaviour {
 	}
 
 	public void depleteEnergy(){
-		energyBar.localScale = new Vector3 (sp.energy, 0,0);
+		energyBar.localScale = new Vector3 (sp.energy, 1,1);
 	}
 
 	//display finish banner
@@ -62,7 +62,7 @@ public class UIElements : MonoBehaviour {
 
 	//return the main menu
 	void Quit(){
-		Application.LoadLevel ("Menu"); //just restart this for now
+		Application.LoadLevel ("Menu");
 	}
 
 	//restarts the game

@@ -8,8 +8,7 @@ public class CatController : MonoBehaviour {
 	public Boundary boundary;
 	public UIElements ui;
 	public SpecialAttacks sp;
-	
-	public float speed;
+
 	public float turnSpeed;
 	public float minTilt, maxTilt, pauseTime;
 
@@ -17,6 +16,7 @@ public class CatController : MonoBehaviour {
 	
 	private float preVertical;
 	private float turnAmount;
+	private float speed;
 
 	private int shakeTimer = 0;
 
@@ -45,6 +45,8 @@ public class CatController : MonoBehaviour {
 		//speedboost enabled move foward faster
 		if (sp.speedBoost)
 			speed = sp.newSpeed;
+		else
+			speed = sp.oldSpeed;
 
 		//reset the shakeTimer after they've cycled back so player can move forward again
 		if (vertical < minTilt && stop) {
@@ -86,12 +88,15 @@ public class CatController : MonoBehaviour {
 		if (other.GetComponent<Collider>().tag == "Finish") {
 			ui.finished = true;
 		}
+
+		if (other.GetComponent<Collider> ().tag == "ShortCut" && sp.shortCut == true)
+			Destroy (other.gameObject);
 	}
 
 	//trigger destroy short-cut box
 	void OnTriggerStay(Collider other) 
 	{
-		if (other.GetComponent<Collider> ().tag == "ShortCut")
+		if (other.GetComponent<Collider> ().tag == "ShortCut" && sp.shortCut == true)
 			Destroy (other.gameObject);
 
 		print (other.GetComponent<Collider> ().tag);

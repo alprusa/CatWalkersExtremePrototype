@@ -8,6 +8,7 @@ public class SpecialAttacks : MonoBehaviour {
 	public bool spUsed = false;
 
 	public float newSpeed;
+	public float oldSpeed;
 	public float energy;
 
 	private int specialAttacksTimer = 0;
@@ -43,7 +44,7 @@ public class SpecialAttacks : MonoBehaviour {
 		if (spUsed)
 			energy = 0.0f;
 		else
-			energy = 255.0f;
+			energy = 1.0f;
 	}
 
 	/*void ghosting(){
