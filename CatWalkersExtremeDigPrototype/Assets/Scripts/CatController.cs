@@ -93,5 +93,7 @@ public class CatController : MonoBehaviour {
 	{
 		if (other.GetComponent<Collider> ().tag == "ShortCut")
 			Destroy (other.gameObject);
+
+		print (other.GetComponent<Collider> ().tag);
 	}
 }

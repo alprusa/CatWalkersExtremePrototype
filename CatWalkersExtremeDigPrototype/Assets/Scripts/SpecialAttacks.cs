@@ -24,13 +24,8 @@ public class SpecialAttacks : MonoBehaviour {
 			waitTimer++;
 
 		//finish the time for the sp ghosting
-		if (specialAttacksTimer > 50 && speedBoost) {
+		if (specialAttacksTimer > 100) {
 			speedBoost = false;
-			specialAttacksTimer = 0;
-		}
-
-		//finish the time for the sp speedboost
-		if (specialAttacksTimer > 100 && shortCut) {
 			shortCut = false;
 			specialAttacksTimer = 0;
 		}
@@ -41,7 +36,14 @@ public class SpecialAttacks : MonoBehaviour {
 			waitTimer = 0;
 		}
 
-		energy = 0.0f;
+		EnergyRate ();
+	}
+
+	void EnergyRate(){
+		if (spUsed)
+			energy = 0.0f;
+		else
+			energy = 255.0f;
 	}
 
 	/*void ghosting(){
