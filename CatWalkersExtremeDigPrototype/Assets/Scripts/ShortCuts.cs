@@ -4,6 +4,7 @@ using System.Collections;
 public class ShortCuts : MonoBehaviour {
 
 	public GameObject citty;
+	public int distanceAway;
 
 	// Update is called once per frame
 	void Update () {
@@ -11,8 +12,9 @@ public class ShortCuts : MonoBehaviour {
 		bool shortCut = citty.GetComponent<SpecialAttacks>().shortCut;
 		float distance = Distance (transform.position.x, catPos.x, transform.position.y, catPos.y);
 
-		if (distance < 20 && shortCut)
+		if (distance < distanceAway && shortCut) {
 			Destroy (gameObject);
+		}
 	}
 
 	//trigger destroy short-cut box

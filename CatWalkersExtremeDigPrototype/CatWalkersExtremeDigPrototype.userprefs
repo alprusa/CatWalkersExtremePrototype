@@ -1,11 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShortCuts.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\UIElements.cs">
     <Files>
-      <File FileName="Assets\Scripts\UIElements.cs" Line="65" Column="34" />
-      <File FileName="Assets\Scripts\CatController.cs" Line="96" Column="2" />
-      <File FileName="Assets\Scripts\SpecialAttacks.cs" Line="11" Column="24" />
-      <File FileName="Assets\Scripts\ShortCuts.cs" Line="14" Column="19" />
+      <File FileName="Assets\Scripts\PowerAttacks.cs" Line="26" Column="1" />
+      <File FileName="Assets\Scripts\UIElements.cs" Line="61" Column="28" />
+      <File FileName="Assets\Scripts\CatController.cs" Line="88" Column="56" />
+      <File FileName="Assets\Scripts\ShortCuts.cs" Line="26" Column="1" />
+      <File FileName="Assets\Scripts\SpecialAttacks.cs" Line="41" Column="20" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

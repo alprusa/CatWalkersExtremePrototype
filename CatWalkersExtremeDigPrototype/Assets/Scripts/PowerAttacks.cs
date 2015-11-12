@@ -5,6 +5,7 @@ public class PowerAttacks : MonoBehaviour {
 
 	public float amount = 50f;
 	public Rigidbody rigidBody;
+	public bool collected = false;
 
 	void FixedUpdate ()
 	{
@@ -15,8 +16,10 @@ public class PowerAttacks : MonoBehaviour {
 		rigidBody.AddTorque(transform.right * v);
 	}
 	
-	void OnCollisionEnter(Collision other) 
+	void OnCollisionStay(Collision other) 
 	{
-		Destroy(gameObject);
+		//if(other.collider.tag == "Player")
+		Destroy (gameObject);
+		collected = true;
 	}
 }

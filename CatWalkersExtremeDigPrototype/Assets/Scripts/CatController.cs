@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class CatController : MonoBehaviour {
@@ -91,14 +91,5 @@ public class CatController : MonoBehaviour {
 
 		if (other.GetComponent<Collider> ().tag == "ShortCut" && sp.shortCut == true)
 			Destroy (other.gameObject);
-	}
-
-	//trigger destroy short-cut box
-	void OnTriggerStay(Collider other) 
-	{
-		if (other.GetComponent<Collider> ().tag == "ShortCut" && sp.shortCut == true)
-			Destroy (other.gameObject);
-
-		print (other.GetComponent<Collider> ().tag);
 	}
 }
