@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{26D60E18-42A0-8C8B-4FFA-08EE145316D7}") = "CatWalkersExtremeDigPrototype", "Assembly-CSharp-firstpass.csproj", "{8F1AC266-3157-502E-4C20-A2A142EFEBDF}"
+EndProject
 Project("{26D60E18-42A0-8C8B-4FFA-08EE145316D7}") = "CatWalkersExtremeDigPrototype", "Assembly-CSharp.csproj", "{C62E48D8-0A25-584F-BAAF-68CF9B89E3AF}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F1AC266-3157-502E-4C20-A2A142EFEBDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F1AC266-3157-502E-4C20-A2A142EFEBDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F1AC266-3157-502E-4C20-A2A142EFEBDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F1AC266-3157-502E-4C20-A2A142EFEBDF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C62E48D8-0A25-584F-BAAF-68CF9B89E3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C62E48D8-0A25-584F-BAAF-68CF9B89E3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C62E48D8-0A25-584F-BAAF-68CF9B89E3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																									GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																													GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
@@ -36,5 +42,4 @@ Global
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
 	EndGlobalSection
-
 EndGlobal
