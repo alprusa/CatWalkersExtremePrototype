@@ -11,8 +11,21 @@ https://www.youtube.com/watch?v=_HCYb7Fj90w
 doin different stuff
 https://unity3d.com/learn/tutorials/projects/space-shooter/boundary?playlist=17147
 
+voice recognition
+http://forum.unity3d.com/threads/voice-recognition-in-unity.124521/
+
 Use ps4 controller motion sensor for the walker
 then use unity to build the game
 
 Backup plan if ps4 controller don't work make the game on my phone and tablet then just have the players start
 	at the same time (this will also demonstrate the online action)
+
+add simple path following AI
+
+add simple selection screen where you can shoose speed boost, ghosting, shortcuts, 
+
+cat screen shortcut (brown) or speed boost (orange)
+
+no to this walker screen walker camoflauge (green) or steal energy (gray)
+
+consider having a voice command feature so players don't need to try and press the small ui buttons.

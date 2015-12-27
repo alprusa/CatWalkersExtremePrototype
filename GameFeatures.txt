@@ -1,0 +1,123 @@
+Special Abilities:
+
+Cats:
+Lion - This special ability calls in the lions pack which, in terms of visuals, will have the lions come in from
+the outside of the map and surround the player’s avatar. This allows for the player to block other cats from moving
+in front of them (the other cat’s must move around this obstacle).
+
+Tiger - Steal the energy from other players. Choose a cat to steal energy from but if that cat doesn’t have energy
+to give then the player only loses their own till the energy replenishes. If the cat does have energy then that cat
+can no longer use their special ability and must now wait for their energy to replenish. Also if the player was
+successful then they again have a full energy bar and can use another ability right away. Visually the cat swipes
+at the other cat to steal the energy.
+
+Lynx - This cat increases the chance for a player to get strong power attacks. Making the stronger attacks (those
+that affect all players at once) have an increased chance of being collected by 40%. (6.25 up 40% = 8.75 chance of
+being received).
+
+Tom Cat - On each course there are some special roads that allow the player to skip some section of the track. Thus
+this cat gives players the ability to take short-cuts. These shortcuts are small spaces like maybe air ducts for
+example and so only a small Tom Cat can fit into these spaces.
+
+Sphynx - This allows the player to hop onto the back of another player’s avatar (nearby) and let them do the
+walking. So essentially the player gets to take a short break from doing anything and just sit and watch as their
+chosen ‘servant’, just one of the cat avatars, takes them forward. (This does not affect the movement or actions of
+the cat that is being ridden on).
+
+Leopard - Camouflage and blend in with the track so that other player’s can no longer see the Leopard avatar. So
+now the avatar is invisible to the other cats and only the player using the Leopard avatar can see themselves on
+their screen window. So players can no longer target this avatar with any abilities or attacks.
+
+Cheetah - Speed sprint forward. This allows the player to move quickly forward for a short time. Once the player
+has used their speed boost their cat will move a little slower than before triggering the ability. The player
+regains their normal speed over a short period of time by having their current speed slowly increase back up to the
+normal speed.
+
+Black Panther - Use ‘ghosting’ to confuse your opponents. This makes the player still visible to other players
+however if they try to hit the user with a player ability then then nothing happens besides both player’s losing
+energy. If the player uses a power attack then the player that fired it will then feel the effects of that attack.
+
+
+Walkers:
+Big Wheels (Similar to Tiger) - Steal the energy from other players. Choose a cat to steal energy from but if that
+cat doesn’t have energy to give then the player only loses their own energy. If the cat does have energy then that
+cat must now wait to use their special ability until their energy replenishes. Also if the player was successful in
+stealing energy then they again have a full energy bar and can use another ability right away. Visually the walker
+drives over another cat and to steal their energy.
+
+Tennis Balls (Similar to Lion) - This special ability calls in tennis balls which, in terms of visuals, will roll
+in from the outside of the map and surround the player’s avatar. This allows for the player to block other cats
+from moving in front of them (the other cat’s must move around this obstacle).
+
+At-At (Similar to Tom Cat) - On each course there are some special roads that allow the player to skip some section
+of the track. Thus this walker gives players the ability to take short-cuts. These shortcuts are small spaces but
+obstacle to other players. For example maybe a safari tourist bus with this the walker will stretch out its legs
+and walk right over the obstacle. No need to go around like the other players.
+
+Biker (Similar to Cheetah) - Speed sprint forward. This allows the player to move quickly forward for a short time.
+Once the player has used their speed boost their cat will move a little slower than before triggering the ability. 
+The player regains their normal speed over a short period of time by having their current speed slowly increase
+back up to the normal speed.
+
+Seaters (Similar to Sphynx) - This allows the player to grab onto the back of another player’s avatar (nearby) and
+let them do the walking. So essentially the player gets to take a short break from doing anything and just sit and
+watch as their chosen cat takes them forward. (This does not affect the movement or actions of the cat that is
+being connect to).
+
+Foldable (Similar to Leopard) - Fold and disappear so that other player’s can no longer see the player avatar. Now
+the avatar is invisible to the other cats and only the player using the this ability can see themselves on their
+window screen. So players can no longer target this avatar with any abilities or attacks.
+
+8-Ball (Similar to Lynx) - This walker increases the chance for a player to get strong power attacks. Making the
+stronger attacks (those that affect all players at once) have an increased chance of being collected by 40%.
+(6.25 up 40% = 8.75 chance of being received).
+
+Wheels (Similar to Black Panther) - Roll back a player ability or attack when they try to hit the player’s avatar.
+This will deflect the ability or attack a player used. If another player tries to hit the user with a player
+ability then then nothing happens besides both player’s losing energy. If the player uses a power attack then the
+player that fired it will then feel the effects of that attack.
+
+
+
+Power Attacks:
+Catnip - (6.25% chance of being collected)
+Causes all players (besides the user) in a given area around the Catnip to stop moving for a short period of time.
+The cats that are in a close enough proximity to the Catnip will move to the location of the (disabling the players
+movements during this time). The player will regain control once the time is up. If a Leopard uses their special
+while they are being pulled toward the Catnip then they will regain control right away. If a Black Panther uses
+their special ability then they to regain control but they do not reflect the power attack back at the player that
+used the Catnip.
+
+Meat (Similar to Catnip) - (18.75% chance of being collected) 
+Cause one player (close to the user) to freeze for a moment and lose control of their cat. The cat will move toward
+the meat and once the short stall time has ending the player regains control over their  cat. If a Leopard uses
+their special while they are being pulled toward the Meat then they will regain control right away. If a Black
+Panther uses their special ability then they to regain control but they do not reflect the power attack back at the
+player that used the Meat.
+
+Water - (6.25% chance of being collected)
+Causes all players (except user) to lose there collected power attacks. Leopards and Black Panthers can only avoid
+this attack if they already had activated their special ability before the attack was triggered.
+
+Kitty Litter (Similar to Water) - (18.75% chance of being collected)
+Causes one player close to the user to lose their collected power attacks. Leopards and Black Panthers can only
+avoid this attack if they already had activated their special ability before the attack was triggered.
+
+Deer (Similar to Meat) - (18.75% chance of being collected)
+Causes one player that is directly behind the user to stop and attack the deer. Slowing the cat’s motions for a
+moment. If a Leopard uses their special while they are being pulled toward the Deer then they will regain control
+right away. If a Black Panther uses their special ability then they to regain control but they do not reflect the
+power attacks back at the player that used the Deer.
+
+Sleep - (6.25% chance of being collected)
+Causes all players to move slowly for a short time allowing the user to be faster than the other players. The user
+is still moving at their normal speed. Leopards and Black panthers can shorten the time of this attack.
+
+Scratchin Post - (6.25% chance of being collected)
+All players (except user) will lose their accumulated energy. Making players need to wait to be able to use their
+special abilities. Leopards and Black Panthers can only avoid this attack if they already had activated their
+special ability before the attack was triggered.
+
+Laser (Similar to Scratching Post) - (18.75% chance of being collected)
+One player loses their energy. This player must be in close proximity to the user. Leopards and Black Panthers can
+only avoid this attack if they already had activated their special ability before the attack was triggered.
